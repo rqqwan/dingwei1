@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.action-item {
+    color: white;
+    font-size: 14;
+    margin: 8 10;
+    padding: 5;
+}
+
+.location-text {
+    font-size: 16;
+    color: #333;
+    margin: 5;
+}
+
+.status-text {
+    font-size: 14;
+    color: #666;
+    margin: 3;
+}
+
+Button {
+    font-size: 16;
+    font-weight: bold;
+}
+
+ActionBar {
+    background-color: #4a90e2;
+    color: white;
+}

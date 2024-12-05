@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:maps="@nativescript/google-maps">
+    <GridLayout>
+        <maps:GoogleMaps
+            latitude="{{ latitude }}"
+            longitude="{{ longitude }}"
+            zoom="{{ zoom }}"
+            bearing="{{ bearing }}"
+            tilt="{{ tilt }}"
+            padding="{{ padding }}"
+            mapAnimationsEnabled="{{ mapAnimationsEnabled }}">
+        </maps:GoogleMaps>
+    </GridLayout>
+</Page>

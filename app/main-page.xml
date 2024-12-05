@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+      xmlns:maps="@nativescript/google-maps"
+      navigatingTo="navigatingTo"
+      class="page">
+    <GridLayout rows="*, auto">
+        <maps:GoogleMaps
+            row="0"
+            latitude="{{ mapViewModel.latitude }}"
+            longitude="{{ mapViewModel.longitude }}"
+            zoom="{{ mapViewModel.zoom }}"
+            bearing="{{ mapViewModel.bearing }}"
+            tilt="{{ mapViewModel.tilt }}"
+            padding="{{ mapViewModel.padding }}"
+            mapAnimationsEnabled="true">
+        </maps:GoogleMaps>
+        <StackLayout row="1" class="p-4">
+            <Button text="刷新位置" tap="{{ updateLocation }}" class="-primary" />
+            <Label text="{{ locationStatus }}" class="text-center" textWrap="true" />
+        </StackLayout>
+    </GridLayout>
+</Page>

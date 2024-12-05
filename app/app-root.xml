@@ -1,0 +1,5 @@
+<Frame defaultPage="main-page">
+    <Frame.actionBar>
+        <ActionBar title="位置共享助手" />
+    </Frame.actionBar>
+</Frame>
